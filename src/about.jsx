@@ -17,7 +17,7 @@ export const About = () => {
   
 
         {/* Image Section */}
-        <div className="group flex  justify-center md:justify-start">
+        <div className="group mt-11 flex  justify-center md:justify-start">
 
         
           <img
