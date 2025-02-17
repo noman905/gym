@@ -6,7 +6,7 @@ export const Choosecard = ({ current }) => {
   return (
     <motion.section
       className="flex flex-col  bg-[#2a2a2a] items-center  rounded-2xl gap-2 sm:rounded-2xl border-[2px] border-black p-3
-                 w-[48%] sm:w-[48%] md:w-[45%] lg:w-[30%] xl:w-[24%]
+                 w-[69%%] sm:w-[48%] md:w-[45%] lg:w-[30%] xl:w-[24%]
                  h-[220px] sm:h-[280px] md:h-[290px] lg:h-[300px] 
                  mx-auto mb-3"
       initial={{ opacity: 0, y: 10 }} // Initial opacity and y position (slight move up)

@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import { FiShoppingCart, FiMenu, FiX } from "react-icons/fi";
+import { FiMenu, FiX } from "react-icons/fi";
 import "./navbar.css"
-
-
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,12 +23,10 @@ export const Navbar = () => {
 
         {/* Icons */}
         <div className="flex items-center gap-4">
-          <FiShoppingCart className="text-xl cursor-pointer hover:text-lime-400 transition" />
-
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="text-xl md:hidden cursor-pointer hover:text-lime-400 transition"
+            className="text-3xl md:hidden cursor-pointer hover:text-lime-400 transition" // Increased size here
           >
             {isOpen ? <FiX /> : <FiMenu />}
           </button>

@@ -37,7 +37,7 @@ const choosearray = [
     
     <>
     <section className="m-2 md:mt-10 bg-black text-white">
-        <h1 className="text-3xl sm:text-4xl m-auto mb-9 flex justify-center items-center font-extrabold uppercase ">Why People Choose Us</h1>
+        <h1 className="text-3xl p-4 text-center sm:text-4xl m-auto mb-9 flex justify-center items-center font-extrabold uppercase ">Why People Choose Us</h1>
     
        <ul className="flex flex-wrap  m-2 sm:p-1  gap-2 w-[95%] justify-center items-center ">
     
