@@ -7,9 +7,9 @@ export const Coachcard = ({ current }) => {
   return (
     <motion.section
       className="flex flex-col  bg-[#2a2a2a] items-center  rounded-2xl gap-2 sm:rounded-2xl  border-[2px] border-black p-3
-                 w-[54%] sm:w-[48%] md:w-[45%] lg:w-[30%] xl:w-[24%]
+                 w-[86%] sm:w-[48%] md:w-[45%] lg:w-[30%] xl:w-[24%]
                  h-[220px] sm:h-[280px] md:h-[290px] lg:h-[300px] 
-                 mx-auto mb-3"
+                  mb-3"
       initial={{ opacity: 0, y: 10 }} // Initial opacity and y position (slight move up)
       whileInView={{ opacity: 1, y: 0 }} // On view, set opacity to 1 and move back to original position
       transition={{ duration: 0.5, ease: "easeInOut" }} // Smooth transition
@@ -25,7 +25,7 @@ export const Coachcard = ({ current }) => {
         <img
           src={link}
           alt={experience}
-          className=" h-[119%]  rounded-3xl  w-full sm:h-[110%] object-contain "
+          className=" h-[119%]  rounded-3xl  w-[500%] sm:h-[110%] object-contain "
         />
       </div>
 
