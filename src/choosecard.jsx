@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
+import { useMemo } from "react";
 
-export const Choosecard = ({ current }) => {
+export const Choosecard =useMemo(({ current }) => {
   const { link, reason, hit, heading } = current;
 
   return (
@@ -47,4 +48,4 @@ export const Choosecard = ({ current }) => {
       </button>
     </motion.section>
   );
-};
+});

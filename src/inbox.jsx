@@ -1,4 +1,6 @@
-export const Inbox = () => {
+import { useMemo } from "react";
+
+export const Inbox =useMemo(() => {
   return (
     <section
       className="relative flex flex-col border-lime-500 border-[2px] bg-opacity-0 text-white md:border-[5px] shadow-blue shadow-2xl items-center justify-center gap-4 w-full md:w-[70%] h-auto md:h-[300px] 
@@ -41,4 +43,4 @@ export const Inbox = () => {
       </div>
     </section>
   );
-};
+});

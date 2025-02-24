@@ -1,3 +1,4 @@
+import { useMemo } from "react";
 import { Choosecard } from "./choosecard";
 
 
@@ -29,7 +30,7 @@ const choosearray = [
 
 
 
-  export const Choose = () => {
+  export const Choose =useMemo( () => {
 
 
 
@@ -59,6 +60,6 @@ const choosearray = [
     )
     
     
-    }
+    })
     
     

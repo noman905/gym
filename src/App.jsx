@@ -1,15 +1,15 @@
+import { About } from "./about";
 import "./App.css";
-import { lazy, Suspense } from "react";
+import { Choose } from "./choose";
+import { Coach } from "./Coaches";
+import { Hero } from "./Hero";
+import { Inbox } from "./inbox";
 
-const Hero = lazy(() => import("./Hero"));
-const Choose = lazy(() => import("./Choose"));
-const About = lazy(() => import("./About"));
-const Coach = lazy(() => import("./Coaches"));
-const Inbox = lazy(() => import("./Inbox"));
+
 
 export const App = () => {
   return (
-    <Suspense fallback={<div>Loading...</div>}>
+    
       <div>
         <Hero />
         <Choose />
@@ -17,7 +17,7 @@ export const App = () => {
         <Coach />
         <Inbox />
       </div>
-    </Suspense>
+    
   );
 };
 

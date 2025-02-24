@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
+import { useMemo } from "react";
 
-  export const Contact = () => {
+  export const Contact =useMemo( () => {
     return (
       <motion.section
         initial={{ opacity: 0, y: 10 }}
@@ -54,7 +55,7 @@ import { motion } from "framer-motion";
         </form>
       </motion.section>
     );
-  };
+  });
   
   
   
