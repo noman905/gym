@@ -1,0 +1,6 @@
+# This file is used to control how search engines crawl and index your site
+User-agent: *
+Disallow: /private/         # Disallow access to the 'private' directory
+Disallow: /secret-page.html # Disallow access to a specific page
+Allow: /private/public-page.html # Allow access to a specific page in 'private'
+Allow: /                    # Allow access to all other pages

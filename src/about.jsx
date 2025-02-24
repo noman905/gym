@@ -20,12 +20,13 @@ export const About = () => {
         <div className="group mt-11 flex  justify-center md:justify-start">
 
         
-          <img
-
-            src="./About/aboutimage.jpg"
-            alt="about"
-            className="rounded-3xl h-[400px] w-[80vw] sm:w-[60vw] md:w-[40vw] lg:w-[30vw] shadow-2xl"
-          />
+        <img
+  src="./About/aboutimage.avif"
+  alt="about"
+  className="rounded-3xl w-[80vw] sm:w-[60vw] md:w-[40vw] lg:w-[30vw] shadow-2xl object-cover"
+  style={{ maxHeight: '400px', objectFit: 'cover' }}
+  loading="lazy"
+/>
         </div>
 
         {/* Text Section */}

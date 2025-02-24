@@ -16,7 +16,7 @@ const choosearray = [
      hit: "Start now!"
     },
     {
-      link: "./choose/choose3.jpg",
+      link: "./choose/choose3.avif",
       heading: "Flexibility & Mobility",
       reason: "Improve flexibility and reduce stiffness.",
      hit: "Start now!"

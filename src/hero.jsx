@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 export const Hero = () => {
   return (
     <div className="relative w-full h-screen bg-cover bg-center flex items-center justify-center text-white"
-      style={{ backgroundImage: "url('./hero.jpg')" }}
+      style={{ backgroundImage: "url('./hero.avif')" }}
     >
       <div className="absolute inset-0 bg-black opacity-70"></div> {/* Dark Overlay */}
       

@@ -8,7 +8,7 @@ export const Inbox = () => {
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center rounded-[30px] md:rounded-[2.4rem]"
-        style={{ backgroundImage: 'url("./hero.jpg")' }}
+        style={{ backgroundImage: 'url("./hero.avif")' }}
       >
         {/* Black Shadow Overlay (Only on Image) */}
         <div className="absolute inset-0 bg-black opacity-70 rounded-[30px] md:rounded-[2.4rem]"></div>

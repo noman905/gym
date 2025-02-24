@@ -4,13 +4,13 @@ import { Coachcard } from "./Coachescard";
 
 const coacharray = [
     {
-      link: "./coaches/coach1.jpg",
+      link: "./coaches/coach1.avif",
       name: "John Smith",
       specialty: "Strength & Conditioning",
       experience: "10+ years"
     },
     {
-      link: "./coaches/coach2.jpg",
+      link: "./coaches/coach2.avif",
       name: "Emily Johnson",
       specialty: "Weight Loss & Nutrition",
       experience: "8+ years"

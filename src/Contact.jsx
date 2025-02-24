@@ -12,7 +12,7 @@ import { motion } from "framer-motion";
         {/* Image Section */}
         <img 
           className="w-full lg:w-[40%] xl:w-[30%] h-auto lg:h-[79vh] rounded-xl mb-8 lg:mb-0 shadow-2xl" 
-          src="./About/aboutimage.jpg" 
+          src="./About/aboutimage.avif" 
           alt="Chef" 
         />
   
