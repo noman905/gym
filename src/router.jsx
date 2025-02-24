@@ -3,12 +3,13 @@ import { createBrowserRouter, Outlet } from "react-router-dom";
 import { App } from "./App";
 
 import { RouterProvider } from "react-router-dom";
-import { Navbar } from "./navbar";
-import { Footer } from "./footer";
-import { About } from "./about";
-import { Coach } from "./Coaches";
-import { Contact } from "./Contact";
-import { Errorpage } from "./error";
+
+import  {Footer} from "./footer";
+import  About from "./about";
+import  Coach from "./Coaches";
+import  Contact  from "./Contact";
+import  {Errorpage}  from "./error";
+import Navbar from "./navbar";
 
 
 

@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-export const Hero = () => {
+ const Hero = () => {
   return (
     <div className="relative w-full h-screen bg-cover bg-center flex items-center justify-center text-white"
       style={{ backgroundImage: "url('./hero.avif')" }}
@@ -29,3 +29,6 @@ export const Hero = () => {
     </div>
   );
 };
+
+
+export default Hero

@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
+import Choosecard from "./choosecard";
 
-export const Coachcard = ({ current }) => {
+ const Coachcard = ({ current }) => {
 
   const { link, name, specialty, experience } = current;
 
@@ -50,7 +51,7 @@ export const Coachcard = ({ current }) => {
   );
 };
 
-
+export default Coachcard
 
 
 

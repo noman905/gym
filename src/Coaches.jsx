@@ -1,4 +1,4 @@
-import { Coachcard } from "./Coachescard";
+import  Coachcard  from "./Coachescard";
 
 
 
@@ -33,7 +33,7 @@ const coacharray = [
 
   
 
-  export const Coach = () => {
+   const Coach = () => {
 
 
 
@@ -65,4 +65,4 @@ const coacharray = [
     
     }
     
-   
+    export default Coach

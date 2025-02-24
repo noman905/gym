@@ -1,15 +1,16 @@
 import "./App.css";
+import { lazy, Suspense } from "react";
 
-import { Hero } from "./Hero";
-import { Choose } from "./choose";
-import { About } from "./about";
-import { Coach } from "./Coaches";
-import { Inbox } from "./inbox";
-
+// Lazy Loading Components (improves performance)
+const Hero = lazy(() => import("./hero"));
+const Choose = lazy(() => import("./choose"));
+const About = lazy(() => import("./about"));
+const Coach = lazy(() => import("./Coaches"));
+const Inbox = lazy(() => import("./inbox"));
 
 export const App = () => {
   return (
-    
+    <Suspense fallback={<div className="text-center text-white">Loading...</div>}>
       <>
         <Hero />
         <Choose />
@@ -17,7 +18,6 @@ export const App = () => {
         <Coach />
         <Inbox />
       </>
-   
+    </Suspense>
   );
 };
-

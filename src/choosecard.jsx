@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-export const Choosecard = ({ current }) => {
+ const Choosecard = ({ current }) => {
   const { link, reason, hit, heading } = current;
 
   return (
@@ -48,3 +48,6 @@ export const Choosecard = ({ current }) => {
     </motion.section>
   );
 };
+
+
+export default Choosecard

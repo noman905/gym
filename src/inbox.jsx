@@ -1,4 +1,4 @@
-export const Inbox = () => {
+ const Inbox = () => {
   return (
     <section
       className="relative flex flex-col border-lime-500 border-[2px] bg-opacity-0 text-white md:border-[5px] shadow-blue shadow-2xl items-center justify-center gap-4 w-full md:w-[70%] h-auto md:h-[300px] 
@@ -42,3 +42,7 @@ export const Inbox = () => {
     </section>
   );
 };
+
+
+
+export default Inbox

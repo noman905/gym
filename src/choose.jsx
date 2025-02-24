@@ -1,4 +1,4 @@
-import { Choosecard } from "./choosecard";
+import  Choosecard from "./choosecard";
 
 
 
@@ -29,7 +29,7 @@ const choosearray = [
 
 
 
-  export const Choose = () => {
+   const Choose = () => {
 
 
 
@@ -62,3 +62,4 @@ const choosearray = [
     }
     
     
+    export default Choose

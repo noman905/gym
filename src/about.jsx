@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-export const About = () => {
+ const About = () => {
   return (
     <>
   
@@ -49,6 +49,9 @@ export const About = () => {
     </>
   );
 };
+
+
+export default About
 
 
 

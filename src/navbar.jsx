@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import { FiMenu, FiX } from "react-icons/fi";
 import "./navbar.css"
 
-export const Navbar = () => {
+ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -49,3 +49,6 @@ export const Navbar = () => {
     </>
   );
 };
+
+
+export default Navbar
