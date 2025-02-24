@@ -1,4 +1,3 @@
-import { useMemo } from "react";
 import { Choosecard } from "./choosecard";
 
 
@@ -11,7 +10,7 @@ const choosearray = [
      hit: "Start now!"
     },
     {
-      link: "./choose/choose2",
+      link: "./choose/choose2.avif",
       heading: "Weight Loss",
       reason: "Burn fat and achieve your ideal physique.",
      hit: "Start now!"
@@ -30,7 +29,7 @@ const choosearray = [
 
 
 
-  export const Choose =useMemo( () => {
+  export const Choose = () => {
 
 
 
@@ -60,6 +59,6 @@ const choosearray = [
     )
     
     
-    })
+    }
     
     

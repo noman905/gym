@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
-import { useMemo } from "react";
 
-export const Choosecard =useMemo(({ current }) => {
+export const Choosecard = ({ current }) => {
   const { link, reason, hit, heading } = current;
 
   return (
@@ -25,7 +24,7 @@ export const Choosecard =useMemo(({ current }) => {
         <img
           src={link}
           alt={heading}
-          className=" h-[119%]  rounded-2xl  w-full sm:h-[110%] object-contain "
+          className=" h-[119%]  rounded-2xl  w-full sm:h-[110%] object-cover "
         />
       </div>
 
@@ -48,4 +47,4 @@ export const Choosecard =useMemo(({ current }) => {
       </button>
     </motion.section>
   );
-});
+};

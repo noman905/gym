@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
-import { useMemo } from "react";
 
-export const About = useMemo(() => {
+export const About = () => {
   return (
     <>
   
@@ -49,7 +48,7 @@ export const About = useMemo(() => {
       </motion.section>
     </>
   );
-});
+};
 
 
 

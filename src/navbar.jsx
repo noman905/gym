@@ -1,9 +1,9 @@
-import React, { useMemo, useState } from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { FiMenu, FiX } from "react-icons/fi";
 import "./navbar.css"
 
-export const Navbar =useMemo( () => {
+export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -48,4 +48,4 @@ export const Navbar =useMemo( () => {
     </header>
     </>
   );
-});
+};

@@ -1,4 +1,3 @@
-import { useMemo } from "react";
 import { Coachcard } from "./Coachescard";
 
 
@@ -34,7 +33,7 @@ const coacharray = [
 
   
 
-  export const Coach = useMemo(() => {
+  export const Coach = () => {
 
 
 
@@ -65,5 +64,5 @@ const coacharray = [
     
     
     }
-  )
+    
    

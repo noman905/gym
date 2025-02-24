@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
-import { useMemo } from "react";
 
-export const Coachcard = useMemo(({ current }) => {
+export const Coachcard = ({ current }) => {
 
   const { link, name, specialty, experience } = current;
 
@@ -49,7 +48,8 @@ export const Coachcard = useMemo(({ current }) => {
       </button>
     </motion.section>
   );
-});
+};
+
 
 
 

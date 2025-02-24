@@ -9,11 +9,10 @@ import { About } from "./about";
 import { Coach } from "./Coaches";
 import { Contact } from "./Contact";
 import { Errorpage } from "./error";
-import { useMemo } from "react";
 
 
 
-export const Router=useMemo((()=>{
+export const Router=(()=>{
 
    const  router=createBrowserRouter([
        {
@@ -69,13 +68,13 @@ return <RouterProvider  router={router}/>
 
 
 
-}));
+})
 
 
 
 
 
- const AppLayout=useMemo((()=>{
+ const AppLayout=(()=>{
 
    return(
     <>
@@ -88,4 +87,4 @@ return <RouterProvider  router={router}/>
 
 
 
- }));
+ })
