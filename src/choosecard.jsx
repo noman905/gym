@@ -21,11 +21,15 @@ import { motion } from "framer-motion";
       {/* Image Container - No Cropping */}
       <div className="w-full relative overflow-hidden  sm:rounded-lg"
            style={{ height: "55%" }}> 
-        <img
-          src={link}
-          alt={heading}
-          className=" h-[119%]  rounded-2xl  w-full sm:h-[110%] object-cover "
-        />
+       <img
+  src={link}
+  srcSet={`${link}?w=400 400w, ${link}?w=800 800w, ${link}?w=1200 1200w`}
+  sizes="(max-width: 640px) 400px, (max-width: 1024px) 800px, 1200px"
+  alt={heading}
+  className="w-full h-auto rounded-2xl object-cover"
+  loading="lazy"
+  decoding="async"
+/>
       </div>
 
       {/* Heading - Big Reason (Bold) */}
