@@ -6,7 +6,7 @@ import { AiFillTikTok } from "react-icons/ai";
 
 
 
-export const Footer = () => {
+ const Footer = () => {
      return (
       <footer>
        <section
@@ -43,7 +43,7 @@ export const Footer = () => {
      );
    };
    
-
+   export default Footer
 
 
 

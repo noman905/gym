@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
-export const Errorpage = () => {
+ const Errorpage = () => {
   const navigate = useNavigate();
 
   return (
@@ -24,3 +24,4 @@ export const Errorpage = () => {
   );
 };
 
+export default Errorpage

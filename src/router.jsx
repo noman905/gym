@@ -1,91 +1,40 @@
-import { createBrowserRouter, Outlet } from "react-router-dom";
-
+import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
+import { Suspense, lazy } from "react";
 import { App } from "./App";
-
-import { RouterProvider } from "react-router-dom";
-
-import  {Footer} from "./footer";
-import  About from "./about";
-import  Coach from "./Coaches";
-import  Contact  from "./Contact";
-import  {Errorpage}  from "./error";
+import  Footer  from "./footer";
 import Navbar from "./navbar";
 
+// Lazy Loading (Code Splitting)
+const About = lazy(() => import("./about"));
+const Coaches = lazy(() => import("./Coaches"));
+const Contact = lazy(() => import("./Contact"));
+const Errorpage = lazy(() => import("./error"));
 
-
-export const Router=(()=>{
-
-   const  router=createBrowserRouter([
-       {
-        path:"/",
-        element:<AppLayout/>,
-        errorElement:<Errorpage />,
-
-       
-
-        children:[
-
-          {
-
-                path:"/",
-
-                element:<App />
-             
-                   
-              },
-            
-        
-              ,{
-              path:"/Contact",
-
-              element:<Contact />
-
-             
-
-              },
-              {
-                path:"/Coaches" ,
-                element:<Coach />
-              }
-              ,{
-
-                path:"/About",
-
-                element:<About />
-             
-  
-                }
-            
-
-        ]}]);
-   
-   
-
-
-
-
-
-return <RouterProvider  router={router}/>
-
-
-
-})
-
-
-
-
-
- const AppLayout=(()=>{
-
-   return(
-    <>
+// Layout Component
+const AppLayout = () => (
+  <>
     <Navbar />
-    <Outlet />
+    <Suspense fallback={<div>Loading...</div>}>
+      <Outlet />
+    </Suspense>
     <Footer />
-    </>
+  </>
+);
 
-   )
+// Define Routes
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <AppLayout />,
+    errorElement: <Errorpage />,
+    children: [
+      { path: "/", element: <App /> },
+      { path: "/Contact", element: <Contact /> },
+      { path: "/Coaches", element: <Coaches /> },
+      { path: "/About", element: <About /> },
+    ],
+  },
+]);
 
-
-
- })
+// Export Router
+export const Router = () => <RouterProvider router={router} />;
