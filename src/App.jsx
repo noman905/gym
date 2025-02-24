@@ -1,32 +1,23 @@
+import "./App.css";
+import { lazy, Suspense } from "react";
 
+const Hero = lazy(() => import("./Hero"));
+const Choose = lazy(() => import("./Choose"));
+const About = lazy(() => import("./About"));
+const Coach = lazy(() => import("./Coaches"));
+const Inbox = lazy(() => import("./Inbox"));
 
-import './App.css';
-
-
-import { Hero } from './hero'
-import { Choose } from './choose';
-import { About } from './about';
-
-import { Inbox } from './inbox';
-import { Coach } from './Coaches';
-
-export const App =( () => {
- 
-
+export const App = () => {
   return (
-    <>
-      
-
-      <Hero />
-      
-      <Choose />
-
-      <About />
-      <Coach />
-      <Inbox />
-      
-    </>
-  )
-})
-
+    <Suspense fallback={<div>Loading...</div>}>
+      <div>
+        <Hero />
+        <Choose />
+        <About />
+        <Coach />
+        <Inbox />
+      </div>
+    </Suspense>
+  );
+};
 
